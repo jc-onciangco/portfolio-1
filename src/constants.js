@@ -8,7 +8,8 @@ const works = [
       techStack: ["HTML5", "CSS3", "NEXT JS", "Firebase"],
       isItResponsive: true,
       hasAccount: true,
-      account: {email: 'rose@gmail.com' , password: 'test1234'}
+      account: {email: 'rose@gmail.com' , password: 'test1234'},
+      slug: 'chatout'
     },
     {
       id: 1,
@@ -19,7 +20,8 @@ const works = [
       techStack: ["HTML5", "CSS3", "VUE JS","vuex", "Firebase", "SASS" ],
       isItResponsive: false,
       hasAccount: true,
-      account: {email: 'uwang@gmail.com' , password: 'test1234'}
+      account: {email: 'uwang@gmail.com' , password: 'test1234'},
+      slug: 'wooz-that-pokemon'
     },
     {
       id: 2,
@@ -30,8 +32,11 @@ const works = [
       techStack: ["HTML5", "CSS3", "NEXTJS", "Redux toolkit"],
       isItResponsive: true,
       hasAccount: false,
-      account: {}
+      account: {},
+      slug: 'monster-match'
     }
   ]
 
-  export {works}
+  const graphicDesigns = []
+
+  export {works,graphicDesigns}

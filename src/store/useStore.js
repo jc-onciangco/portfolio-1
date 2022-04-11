@@ -1,5 +1,5 @@
 import create from 'zustand'
-import {works} from '../constants'
+import {works,graphicDesigns} from '../constants'
 const useMenuState = create(set => ({
   isMenuOpen: false,
   openMenu: () => set(state => ({ isMenuOpen: !state.isMenuOpen }))
@@ -14,8 +14,19 @@ const useWorksState = create(set => ({
   works: works
 }))
 
+const useGraphicDesignsState = create(set => ({
+  graphicDesigns: graphicDesigns
+}))
+
+const useMessageState = create(set => ({
+  isMessageSent: false,
+  setIsMessageSent: () => set(state => ({isMessageSent: !state.isMessageSent}))
+}))
+
 export {
     useMenuState,
     useRouterState,
-    useWorksState
+    useWorksState,
+    useGraphicDesignsState,
+    useMessageState
 }

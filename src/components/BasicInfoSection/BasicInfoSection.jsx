@@ -14,11 +14,11 @@ function BasicInfoSection() {
                 <div className="">
                     <div className="tools mb-8">
                         <div className="title mb-2">Coding and Programming</div>
-                        <ul className="text-3xl font-thin tracking-wide flex gap-4">
+                        <ul className="text-3xl font-thin tracking-wide flex flex-wrap gap-4">
                             {
                                 programming.map((tool, index) => {
                                     return (
-                                        <li className="bg-[#EA6035] text-white py-2 px-5 text-2xl" key={index}>{tool}</li>
+                                        <li className="bg-orange text-white py-2 px-5 text-2xl" key={index}>{tool}</li>
                                     )
                                 })
                             }
@@ -26,11 +26,11 @@ function BasicInfoSection() {
                     </div>
                     <div className="designing">
                         <div className="title mb-2">Designing and Illustrating</div>
-                        <ul className="text-3xl font-thin tracking-wide flex gap-4">
+                        <ul className="text-3xl font-thin tracking-wide flex flex-wrap gap-4">
                             {
                                 designing.map((tool, index) => {
                                     return (
-                                        <li className="bg-[#EA6035] text-white py-2 px-5 text-2xl" key={index}>{tool}</li>
+                                        <li className="bg-orange text-white py-2 px-5 text-2xl" key={index}>{tool}</li>
                                     )
                                 })
                             }
@@ -46,7 +46,7 @@ function BasicInfoSection() {
 const Format = ({children, header}) => {
     return (
         <div className="content max-w-[900px] m-auto mb-16">
-            <div className="title font-extrabold text-6xl mb-8">{header}<span className="question-mark ml-2 text-7xl inline-block text-[#EA6035]">?</span></div>
+            <div className="title font-extrabold text-5xl  md:text-6xl mb-8">{header}<span className="question-mark ml-2 text-7xl inline-block text-orange">?</span></div>
             <style jsx>{`
 
                     .question-mark {
@@ -62,7 +62,7 @@ const Format = ({children, header}) => {
 
                 `}</style>
 
-            <div className="info text-4xl text-black/60">
+            <div className="info text-3xl md:text-4xl text-black/60">
                 {children}
             </div>
         </div>

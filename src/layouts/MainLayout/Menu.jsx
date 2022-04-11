@@ -1,4 +1,5 @@
 import React from 'react'
+import {useRouter} from 'next/router'
 import {useMenuState,useRouterState} from '../../store/useStore'
 import Link from 'next/link'
 const menuList = [
@@ -19,15 +20,10 @@ const menuList = [
         name: 'about me',
         url: '/about-me',
         routeName: 'About me'
-    },
-    {
-        id: 3,
-        name: 'contacts',
-        url: '/contacts',
-        routeName: 'Contacts'
-    },
+    }
 ]
 function Menu() {
+    const router = useRouter()
     const openMenu = useMenuState(state => state.openMenu)
     const isMenuOpen = useMenuState(state => state.isMenuOpen)
     const setRoute = useRouterState(state => state.setRoute)
@@ -41,12 +37,12 @@ function Menu() {
 
     return (
         <div className={`menu fixed inset-0 bg-transparent z-[20] ${isMenuOpen? "pointer-events-auto" : "pointer-events-none"}`}>
-            <div className={`absolute flex justify-center items-center inset-0 bg-[#1D3C58] transition-all ${isMenuOpen?"translate-y-0" : "-translate-y-full" }`}>
-                <ul className="menu-list text-[6rem] leading-[1]">
+            <div className={`absolute flex justify-center items-center inset-0 bg-darkBlue transition-all ${isMenuOpen?"translate-y-0" : "-translate-y-full" }`}>
+                <ul className="menu-list flex flex-col items-center md:items-start text-[5rem] md:text-[6rem] leading-[1]">
                     {
                         menuList.map(menu => {
                             return (
-                                <li onClick={() => handleClickLink(menu.routeName)} key={menu.id} className="text-white hover:text-[#EA6035] w-max">
+                                <li onClick={() => handleClickLink(menu.routeName)} key={menu.id} className={`text-white hover:text-orange w-max ${router.pathname === menu.url? "text-orange/60 hover:text-orange/60 cursor-default" : "" } `}>
                                     <Link href={menu.url}>
                                         <a>{menu.name}</a>
                                     </Link>

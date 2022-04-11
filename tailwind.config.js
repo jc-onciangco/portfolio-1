@@ -5,7 +5,12 @@ module.exports = {
     "./src/layouts/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        orange: '#EA6035',
+        darkBlue: '#1D3C58',
+      }
+    },
   },
   plugins: [],
 }

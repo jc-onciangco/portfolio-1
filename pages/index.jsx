@@ -7,6 +7,7 @@ import SelectedWorks from '../src/components/SelectedWorksSection';
 import BasicInfoSection from '../src/components/BasicInfoSection';
 import SmoothScrollLayout from '../src/layouts/SmoothScrollLayout';
 import MainLayout from '../src/layouts/MainLayout';
+import Contact from '../src/components/Contact'
 export default function Home() {
   return (
     <div className="bg-[#EAE7D6]">
@@ -14,6 +15,7 @@ export default function Home() {
         <HeroSection  />
         <BasicInfoSection />
         <SelectedWorks />
+        <Contact />
       </MainLayout>
     </div>
   )
