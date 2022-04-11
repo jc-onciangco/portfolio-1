@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import { motion } from "framer-motion"
 
 function HeroSection() {
     const variants = {
@@ -21,15 +20,9 @@ function HeroSection() {
                         <div className="hello text-5xl leading-none">Hello!</div>
                         <div className="my-name text-6xl leading-none font-bold">I&apos;m Juan Carlo </div>
                     </div>
-                    <motion.div 
-                        variants={variants} 
-                        initial="hidden"
-                        animate="visible"    
-                                >
-                        <div className="img-container border-l-4 border-orange relative w-[225px] md:w-[250px] lg:w-[300px] aspect-square ">
-                            <Image src="/me2.jpg" alt="my_image" layout='fill' />
-                        </div>
-                    </motion.div>
+                    <div className="img-container border-l-4 border-orange relative w-[225px] md:w-[250px] lg:w-[300px] aspect-square ">
+                        <Image src="/me2.jpg" alt="my_image" layout='fill' />
+                    </div>
                 </div>
 
                 <div className="my-data flex flex-col justify-between w-2/4 md:w-full"> 

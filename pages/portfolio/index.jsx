@@ -10,10 +10,10 @@ export default function Portfolio() {
         <div className="min-h-screen w-full py-20">
           <div className="works w-full md:w-[620px] lg:w-[750px] xl:w-[900px] m-auto px-2">
             <div className="title text-3xl md:text-4xl lg:text-5xl mb-6 lg:mb-10">Portfolio</div>
-            <div className="text-sm md:text-base categories flex gap-1 pb-6 pt-2">
+            {/* <div className="text-sm md:text-base categories flex gap-1 pb-6 pt-2">
               <div onClick={() => setCurrentTab('works')} className={`web-app rounded-sm ${currentTab==='works'? 'bg-darkBlue text-white' :'bg-transparent text-black border-darkBlue/20'} border-2 cursor-pointer transition-all  py-1 px-6`}>Web Application</div>
               <div onClick={() => setCurrentTab('graphicDesigns')} className={`graphic-design rounded-sm ${currentTab==='graphicDesigns'? 'bg-darkBlue text-white' :'bg-transparent text-black border-darkBlue/20'} border-2 cursor-pointer transition-all  py-1 px-6`}>Graphic Design</div>
-            </div>
+            </div> */}
               {
                 currentTab==='works'?
                 <Works /> :
