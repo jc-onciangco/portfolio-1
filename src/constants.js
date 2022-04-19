@@ -34,6 +34,19 @@ const works = [
       hasAccount: false,
       account: {},
       slug: 'monster-match'
+    },
+    {
+      id: 3,
+      name: 'Skyflix (Movie App)',
+      url: 'https://movie-app-tan.vercel.app/',
+      imgUrl: '/movie-app.png',
+      description: `A typical movie app that you can filter by genres or sort the list of movies or tv shows. You can view each movie and tv shows details. You can search as well your favorite movies and tv shows.
+      I used Client-Side Rendering Architechture for getting the list of all movies and tv shows, and Server-side Rendering for each movie and tv show details. As you can see when you go to each movie and tv show details there is no loading state as it is pre-rendered on a server compare to Client-Side rendering.`,
+      techStack: ["HTML5", "CSS3 (TailwindCSS)", "NEXTJS", "React Query" , "Zustand(State Management)"],
+      isItResponsive: true,
+      hasAccount: false,
+      account: {},
+      slug: 'sky-flix'
     }
   ]
 

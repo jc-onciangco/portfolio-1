@@ -62,7 +62,7 @@ const Work = ({work}) => {
 
             <div className="text">
                 <div className="name text-2xl capitalize font-bold mb-1 text-orange tracking-wider">{work.name}</div>
-                <div className="description uppercase font-semibold text-black/60 text-lg tracking-wider">{work.description}</div>
+                <div className="description uppercase font-semibold text-black/60 text-lg tracking-wider line-clamp-3">{work.description}</div>
             </div> 
 
         </div>
